@@ -1,0 +1,92 @@
+[
+  {
+    "id": "burnout",
+    "trigger": {"burnout_level": ["HIGH", "CRITICAL"]},
+    "books": [
+      {"title": "Burnout: The Secret to Unlocking the Stress Cycle", "author": "Emily & Amelia Nagoski", "why": "Practical framework to exit burnout loops"},
+      {"title": "When the Body Says No", "author": "Gabor Maté", "why": "How chronic stress manifests as physical illness"},
+      {"title": "Deep Work", "author": "Cal Newport", "why": "Work smarter, not longer — reclaim focus"},
+      {"title": "The Burnout Fix", "author": "Jacinta Jiménez", "why": "Science-backed recovery strategy"}
+    ],
+    "movies": [
+      {"title": "The Social Dilemma", "year": 2020, "why": "Understand what systems are exploiting your attention"},
+      {"title": "Margin Call", "year": 2011, "why": "The hidden cost of overwork on character"},
+      {"title": "Office Space", "year": 1999, "why": "A mirror into meaningless grind culture"}
+    ]
+  },
+  {
+    "id": "dopamine",
+    "trigger": {"dopamine_baseline": {"below": 50}},
+    "books": [
+      {"title": "Dopamine Nation", "author": "Anna Lembke", "why": "Understanding pleasure/pain balance and recovery"},
+      {"title": "The Shallows", "author": "Nicholas Carr", "why": "How internet is rewiring your brain"},
+      {"title": "Indistractable", "author": "Nir Eyal", "why": "Regain control over your own attention"},
+      {"title": "Stolen Focus", "author": "Johann Hari", "why": "Why you can't pay attention and how to fix it"}
+    ],
+    "movies": [
+      {"title": "Her", "year": 2013, "why": "Technology filling the void of real connection"},
+      {"title": "Black Mirror: Nosedive", "year": 2016, "why": "Dopamine loops from social validation"},
+      {"title": "The Social Network", "year": 2010, "why": "Origins of the attention economy"}
+    ]
+  },
+  {
+    "id": "isolation",
+    "trigger": {"relationship_health": {"below": 40}},
+    "books": [
+      {"title": "Lost Connections", "author": "Johann Hari", "why": "The hidden causes of depression and loneliness"},
+      {"title": "Bowling Alone", "author": "Robert D. Putnam", "why": "The collapse of community and social capital"},
+      {"title": "The Village Effect", "author": "Susan Pinker", "why": "Why face-to-face contact matters for health and happiness"},
+      {"title": "Together", "author": "Vivek Murthy", "why": "America's Surgeon General on the loneliness epidemic"}
+    ],
+    "movies": [
+      {"title": "Cast Away", "year": 2000, "why": "The primal human need for connection"},
+      {"title": "Into the Wild", "year": 2007, "why": "The illusion that isolation equals freedom"},
+      {"title": "The Intouchables", "year": 2011, "why": "Authentic connection transcending all barriers"}
+    ]
+  },
+  {
+    "id": "cognitive",
+    "trigger": {"cognitive_decline_risk": ["HIGH", "CRITICAL"]},
+    "books": [
+      {"title": "Keep Sharp", "author": "Sanjay Gupta", "why": "Build a better brain at any age"},
+      {"title": "The End of Mental Illness", "author": "Daniel G. Amen", "why": "Optimize brain health through lifestyle"},
+      {"title": "Brain Rules", "author": "John Medina", "why": "12 principles for surviving and thriving at work, home, and school"},
+      {"title": "Why We Sleep", "author": "Matthew Walker", "why": "Sleep's critical role in cognitive function"}
+    ],
+    "movies": [
+      {"title": "Limitless", "year": 2011, "why": "What peak cognitive function could feel like"},
+      {"title": "Still Alice", "year": 2014, "why": "The devastating reality of cognitive decline"},
+      {"title": "A Beautiful Mind", "year": 2001, "why": "The fragility and resilience of the human mind"}
+    ]
+  },
+  {
+    "id": "healthy",
+    "trigger": {"life_score": {"above": 70}},
+    "books": [
+      {"title": "Atomic Habits", "author": "James Clear", "why": "The system behind your system — keep compounding"},
+      {"title": "The Almanack of Naval Ravikant", "author": "Eric Jorgenson", "why": "Wealth and happiness through long-term thinking"},
+      {"title": "Range", "author": "David Epstein", "why": "Why generalists thrive in a specialized world"},
+      {"title": "Flow", "author": "Mihaly Csikszentmihalyi", "why": "The psychology of optimal experience"}
+    ],
+    "movies": [
+      {"title": "Whiplash", "year": 2014, "why": "The razor edge between excellence and destruction"},
+      {"title": "The Pursuit of Happyness", "year": 2006, "why": "Resilience and authentic ambition"},
+      {"title": "Good Will Hunting", "year": 1997, "why": "Unlocking your full potential through self-awareness"}
+    ]
+  },
+  {
+    "id": "financial_risk",
+    "trigger": {"income_growth": {"below": 0}},
+    "books": [
+      {"title": "The Psychology of Money", "author": "Morgan Housel", "why": "Irrational behaviors that govern financial outcomes"},
+      {"title": "I Will Teach You To Be Rich", "author": "Ramit Sethi", "why": "Automate your finances and build wealth"},
+      {"title": "Your Money or Your Life", "author": "Vicki Robin", "why": "Rethinking the relationship between time and money"},
+      {"title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "why": "Assets vs. liabilities mindset shift"}
+    ],
+    "movies": [
+      {"title": "The Big Short", "year": 2015, "why": "How systemic financial ignorance creates collapse"},
+      {"title": "Wolf of Wall Street", "year": 2013, "why": "Money without purpose leads to destruction"},
+      {"title": "Parasite", "year": 2019, "why": "The hidden violence of economic stratification"}
+    ]
+  }
+]

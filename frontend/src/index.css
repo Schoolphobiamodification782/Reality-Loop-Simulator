@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-darkerBg text-textMain font-sans antialiased;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #040506;
+    background-image:
+      linear-gradient(rgba(255,42,42,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,42,42,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: center center;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #0B0C10; }
+  ::-webkit-scrollbar-thumb { background: #ff2a2a; border-radius: 2px; }
+}
+
+/* ===== GLITCH EFFECT ===== */
+.glitch {
+  position: relative;
+  color: white;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff2a2a;
+  clip-path: inset(30% 0 50% 0);
+  animation: glitch-1 3s infinite linear alternate-reverse;
+}
+.glitch::after {
+  left: -2px;
+  text-shadow: 2px 0 #00f3ff;
+  clip-path: inset(60% 0 10% 0);
+  animation: glitch-2 3s infinite linear alternate-reverse;
+}
+@keyframes glitch-1 {
+  0%   { clip-path: inset(10% 0 80% 0); transform: translateX(-2px); }
+  20%  { clip-path: inset(55% 0 10% 0); transform: translateX(2px); }
+  40%  { clip-path: inset(80% 0 5% 0);  transform: translateX(-1px); }
+  60%  { clip-path: inset(3% 0 60% 0);  transform: translateX(3px); }
+  80%  { clip-path: inset(40% 0 30% 0); transform: translateX(-2px); }
+  100% { clip-path: inset(70% 0 10% 0); transform: translateX(1px); }
+}
+@keyframes glitch-2 {
+  0%   { clip-path: inset(80% 0 0% 0);  transform: translateX(2px); }
+  20%  { clip-path: inset(10% 0 55% 0); transform: translateX(-3px); }
+  40%  { clip-path: inset(50% 0 25% 0); transform: translateX(1px); }
+  60%  { clip-path: inset(20% 0 70% 0); transform: translateX(-2px); }
+  80%  { clip-path: inset(5% 0 45% 0);  transform: translateX(2px); }
+  100% { clip-path: inset(65% 0 20% 0); transform: translateX(-1px); }
+}
+
+/* ===== SCANLINES ===== */
+.scanlines::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.05) 0px,
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ===== NEON GLOW HELPERS ===== */
+.glow-red   { box-shadow: 0 0 20px rgba(255, 42, 42, 0.4); }
+.glow-green { box-shadow: 0 0 20px rgba(57, 255, 20, 0.4); }
+.glow-text-red  { text-shadow: 0 0 15px rgba(255, 42, 42, 0.7); }
+.glow-text-green { text-shadow: 0 0 15px rgba(57, 255, 20, 0.7); }
+
+/* ===== CORNER BRACKETS ===== */
+.bracket-box {
+  position: relative;
+}
+.bracket-box::before,
+.bracket-box::after {
+  content: '';
+  position: absolute;
+  width: 16px; height: 16px;
+  border-color: #ff2a2a;
+  border-style: solid;
+}
+.bracket-box::before { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+.bracket-box::after  { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+
+/* ===== NEON BUTTON ===== */
+.btn-neon-red {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid #ff2a2a;
+  color: #ff2a2a;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-neon-red::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,42,42,0.15), transparent);
+  transition: left 0.5s ease;
+}
+.btn-neon-red:hover::before { left: 100%; }
+.btn-neon-red:hover {
+  background: #ff2a2a;
+  color: #040506;
+  box-shadow: 0 0 30px rgba(255, 42, 42, 0.6), inset 0 0 30px rgba(255, 42, 42, 0.1);
+}
+
+/* ===== METRIC CARD ===== */
+.metric-card {
+  background: #0B0C10;
+  border: 1px solid #1F2833;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 42, 42, 0.5), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.metric-card:hover::before { transform: translateX(100%); }
+.metric-card:hover { border-color: rgba(255, 42, 42, 0.4); transform: translateY(-2px); }
+
+/* ===== RANGE INPUT STYLE ===== */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  background: #1F2833;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px; height: 14px;
+  background: #ff2a2a;
+  border-radius: 0;
+  border: 1px solid #ff6b6b;
+  box-shadow: 0 0 10px rgba(255, 42, 42, 0.5);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px; height: 14px;
+  background: #ff2a2a;
+  border-radius: 0;
+  border: 1px solid #ff6b6b;
+  box-shadow: 0 0 10px rgba(255, 42, 42, 0.5);
+  cursor: pointer;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+  height: 6px;
+  background: #1F2833;
+  border-radius: 0;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  transition: width 1s ease;
+}
+
+/* ===== FADE IN ===== */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== TYPING CURSOR ===== */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+  color: #ff2a2a;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ===== 3D DREAM PANEL ANIMATIONS ===== */
+.dream-card-in {
+  animation: dreamIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes dreamIn {
+  from { opacity: 0; transform: translateZ(-600px) rotateX(14deg) scale(0.78); filter: blur(10px) brightness(0.3); }
+  to   { opacity: 1; transform: translateZ(0px) rotateX(0deg) scale(1); filter: blur(0px) brightness(1); }
+}
+.dream-card-out-back {
+  animation: dreamOutBack 0.35s cubic-bezier(0.55, 0, 1, 0.45) forwards;
+  pointer-events: none;
+}
+@keyframes dreamOutBack {
+  from { opacity: 1; transform: translateZ(0px) scale(1); filter: blur(0px) brightness(1); }
+  to   { opacity: 0; transform: translateZ(-500px) rotateX(-10deg) scale(0.7); filter: blur(12px) brightness(0.15); }
+}
+.dream-card-out-forward {
+  animation: dreamOutForward 0.35s cubic-bezier(0.55, 0, 1, 0.45) forwards;
+  pointer-events: none;
+}
+@keyframes dreamOutForward {
+  from { opacity: 1; transform: translateZ(0px) scale(1); filter: blur(0px) brightness(1); }
+  to   { opacity: 0; transform: translateZ(350px) scale(1.3); filter: blur(16px) brightness(2.5); }
+}
+.dream-float {
+  animation: dreamFloat 4s ease-in-out infinite;
+}
+@keyframes dreamFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}

@@ -1,4 +1,9 @@
-# 🔴 Reality Loop Simulator
+<div align="center">
+
+#  🔴 Reality Loop Simulator 🔴 
+
+</div>
+
 <img width="1650" height="853" alt="Screenshot 2026-03-26 at 07 29 17" src="https://github.com/user-attachments/assets/4997cc2f-2c9a-4a06-ac49-95e1adea94bf" />
 
 > **"Your future is predictable."**  

@@ -1,4 +1,5 @@
 # 🔴 Reality Loop Simulator
+<img width="1650" height="853" alt="Screenshot 2026-03-26 at 07 29 17" src="https://github.com/user-attachments/assets/4997cc2f-2c9a-4a06-ac49-95e1adea94bf" />
 
 > **"Your future is predictable."**  
 > A psychologically impactful life simulation app that projects where your daily habits will take you in 5 years — with brutal honesty.
@@ -12,7 +13,7 @@
 
 ## 👤 Developer
 
-> **Chadi0x** — The Maker. The Legend.  
+> **Chadi0x** — The Maker .  
 > Built with obsession, not templates.
 
 ---
@@ -48,12 +49,10 @@ It doesn't sugarcoat. It calculates.
 
 ## ✨ Features
 
-- **🌀 3D Dream Panel Input Flow** — full-screen cinematic panel-by-panel habit entry with 3D tunnel transitions
 - **⚡ Shock Mode** — toggle brutal, unfiltered messaging vs. standard output
 - **📊 Animated Result Dashboard** — staggered cards, glowing bars, animated counters, SVG score ring
 - **📚 Smart Recommendations** — books and films curated to your specific simulation outcome
 - **🔄 "What if I fix my habits?" Mode** — re-run with optimized inputs and compare outcomes
-- **🎨 Cyberpunk Dark UI** — neon red/green palette, glitch effects, Space Mono + Inter fonts
 
 ---
 

